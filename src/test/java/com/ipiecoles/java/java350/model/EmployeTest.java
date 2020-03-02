@@ -9,7 +9,7 @@ import java.time.LocalDate;
 class EmployeTest {
 
     @Test
-    void getNombreAnneeAnciennete_dateEmbaucheNull() {
+    void getNombreAnneeAnciennetedateEmbaucheNull() {
         //Given
         Employe employe = new Employe();
         employe.setDateEmbauche(null);
@@ -20,7 +20,7 @@ class EmployeTest {
     }
 
     @Test
-    void getNombreAnneeAnciennete_dateEmbauchePlus2(){
+    void getNombreAnneeAnciennetedateEmbauchePlus2(){
         //Given
         Employe employe = new Employe();
         employe.setDateEmbauche(LocalDate.now().plusYears(2));
@@ -31,7 +31,7 @@ class EmployeTest {
     }
 
     @Test
-    void getNombreAnneeAnciennete_dateEmbaucheMoins3(){
+    void getNombreAnneeAnciennetedateEmbaucheMoins3(){
         //Given
         Employe employe = new Employe();
         employe.setDateEmbauche(LocalDate.now().minusYears(3));
@@ -42,7 +42,7 @@ class EmployeTest {
     }
 
     @Test
-    void getNombreAnneeAnciennete_dateEmbaucheAuj(){
+    void getNombreAnneeAnciennetedateEmbaucheAuj(){
         //Given
         Employe employe = new Employe();
         employe.setDateEmbauche(LocalDate.now());
