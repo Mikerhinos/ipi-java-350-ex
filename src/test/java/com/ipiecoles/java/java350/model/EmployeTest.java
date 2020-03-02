@@ -45,7 +45,7 @@ class EmployeTest {
     void getNombreAnneeAnciennete_dateEmbaucheAuj(){
         //Given
         Employe employe = new Employe();
-        employe.setDateEmbauche(LocalDate.now().plusYears(2));
+        employe.setDateEmbauche(LocalDate.now());
         //When
         Integer nbAnneeAnciennete = employe.getNombreAnneeAnciennete();
         //Then
